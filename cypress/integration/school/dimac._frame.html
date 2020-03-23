@@ -1,0 +1,1079 @@
+
+
+<html>
+<title>:::::A N U I E S:::::</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+
+
+ <!-- aqui empieza la cabecera de la tabla  -->
+<!--
+<p>&nbsp;</p>
+
+
+<table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>      <td width="48%"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>            <td width="1%"><img src="http://anuies.mx/principal/imagenes/central/cuadros/img_izquierda_arriba.gif" width="10" height="15"></td>            <td width="100%" background="http://anuies.mx/principal/imagenes/central/cuadros/img_centro_arriba.gif"><div align="center">Consulta Avanzada del Directorio Nacional de IES</div></td>            <td width="3%"><div align="right"><img src="http://anuies.mx/principal/imagenes/central/cuadros/img_derecha_arriba.gif" width="10" height="15"></div></td>
+          </tr>
+          <tr>            <td background="http://anuies.mx/principal/imagenes/central/cuadros/img_izquierda_centro.gif">&nbsp;</td>
+
+            <td><p>
+-->
+ <!-- aqui termina la cabecera de la tabla   -->
+
+
+
+
+
+<center><font color="#990000"
+<b>Dejar indicados los criterios de selección de la información deseada y,en su caso, indicar aquellos que deben cumplir las instituciones y oprima consultar<br>
+ Si
+<input type=checkbox name=anuies_si value="S" checked>
+No
+<input type=checkbox name=anuies_no value="S" checked>
+= Todos</font>
+<form action=/perl/directorios/repinst3.pl method=post>
+Afiliadas a ANUIES: Si
+<input type=checkbox name=anuies_si value="S" checked>
+No
+<input type=checkbox name=anuies_no value="S" checked>
+Planteles Desconcentrados: Si
+<input type=checkbox name=anuies_dc value="S" checked>
+No
+<input type=checkbox name=anuies_nd value="S" checked>
+<table width=80%>
+<tr><th valign=top><br>Nombre:</th><td>
+(Teclee el nombre de la Institución o parte de el)
+<textarea name=nombre_inst cols=60  rows=2></textarea>
+</td></tr>
+</table>
+<table>
+<font size=3><tr><th align=left>Entidad:</th><td colspan=1 width=80>
+<select name=ent_fed_inst>
+<option value=0>Todas
+<option value=1>Aguascalientes
+<option value=2>Baja California
+<option value=3>Baja California Sur
+<option value=4>Campeche
+<option value=5>Chiapas
+<option value=6>Chihuahua
+<option value=9>Ciudad de México
+<option value=7>Coahuila
+<option value=8>Colima
+<option value=10>Durango
+<option value=11>Guanajuato
+<option value=12>Guerrero
+<option value=13>Hidalgo
+<option value=14>Jalisco
+<option value=15>México
+<option value=16>Michoacán
+<option value=17>Morelos
+<option value=18>Nayarit
+<option value=19>Nuevo León
+<option value=20>Oaxaca
+<option value=21>Puebla
+<option value=22>Querétaro
+<option value=23>Quintana Roo
+<option value=24>San Luis Potosí
+<option value=25>Sinaloa
+<option value=26>Sonora
+<option value=27>Tabasco
+<option value=28>Tamaulipas
+<option value=29>Tlaxcala
+<option value=30>Veracruz
+<option value=31>Yucatán
+<option value=32>Zacatecas
+</select>
+</td>
+ <tr><th align=left>Localidad:</th><TD WIDTH="220" VALIGN="TOP"> <SELECT NAME="ciudad_inst"><OPTION value=0>Todas</OPTION>
+       </font></SELECT><td width=20>&nbsp</td><th align=left>Delegación:</th><td colspan=3>
+<select name=delegacion_inst>
+<option value=0>Todas
+<option value=1>Azcapotzalco
+<option value=2>Benito Juárez
+<option value=3>Coyoacán
+<option value=4>Cuajimalpa de Morelos
+<option value=5>Cuauhtémoc
+<option value=6>Gustavo A. Madero
+<option value=7>Iztacalco
+<option value=8>Iztapalapa
+<option value=9>Magdalena Contreras
+<option value=10>Miguel Hidalgo
+<option value=11>Milpa Alta
+<option value=12>Tlalpan
+<option value=13>Venustiano Carranza
+<option value=14>Xochimilco
+<option value=15>Álvaro Obregón
+<option value=17>delegaciones
+<option value=18>Tláhuac
+</select>
+</td>
+</tr>
+</tr>
+</table>
+<table>
+<tr>
+<td><b>Pertenecen al:</td>
+<td><b>Consejo Nacional:</td>
+<td><b>
+Si
+<input type=checkbox name=consejo_si value="S" checked>
+No
+<input type=checkbox name=consejo_no value="S" checked>
+</td>
+<td><b>CUPIA:</td>
+<td><b>
+Si
+<input type=checkbox name=cupia_si value="S" checked>
+No
+<input type=checkbox name=cupia_no value="S" checked>
+</td>
+</tr>
+<tr>
+<td></td>
+<td><b>Consejo Regional del Área</td>
+<td colspan=1>
+<select name=con_reg_inst>
+<option value=0>Todas
+<option value=1>Noreste
+<option value=2>Noroeste
+<option value=3>Centro-Sur
+<option value=4>Centro-Occidente
+<option value=5>Sur-Sureste
+<option value=6>Metropolitana
+</select>
+</td>
+<td><b>CUPRIA:</td>
+<td><b>
+Si
+<input type=checkbox name=cupria_si value="S" checked>
+No
+<input type=checkbox name=cupria_no value="S" checked>
+</td>
+</tr>
+</table>
+<table>
+<tr> <th align=left>Grupo de Instituciones:</th><td colspan=1>
+<select name=subsistema_inst>
+<option value=0>Todos
+<option value=1>Centro
+<option value=2>Colegio
+<option value=3>Escuela
+<option value=4>Instituto
+<option value=5>Universidad
+</select>
+</td>
+<th align=left>Tipo: </th><td colspan=1>
+<select name=tipo_inst>
+<option value=0>Todos
+<option value=1>Pública
+<option value=2>Particular
+</select>
+</td>
+</table>
+<table> <th align=left>Régimen legal:</th><td colspan=1>
+<select name=rlegal_inst>
+<option value=0>Todos
+<option value=1>Desconcentrada del Gobierno Federal
+<option value=2>Descentralizada del Gobierno Federal
+<option value=3>Estatal
+<option value=4>Desconcentrada del Gobierno del Estado
+<option value=5>Con Incorporación de Estudios a la UNAM
+<option value=6>Con Incorporación de Estudios a Universidad Pública
+<option value=7>Con Incorporación de Estudios al IPN
+<option value=8>Con RVOE del Gobierno del Estado
+<option value=9>Con RVOE de la SEP
+<option value=10>Descentralizada del Gobierno del Estado
+<option value=11>Dependiente de la SEP
+<option value=12>Autónoma
+<option value=13>Con RVOE otorgado por Decreto Presidencial
+<option value=14>Unidad Docente Desconcentrada de IES
+<option value=15>Unidad Docente Descentralizada de IES
+<option value=16>
+</select>
+</td>
+</tr><tr><th></th>
+<td colspan=1>
+<select name=rlegal2_inst>
+<option value=0>Todos
+<option value=1>Desconcentrada del Gobierno Federal
+<option value=2>Descentralizada del Gobierno Federal
+<option value=3>Estatal
+<option value=4>Desconcentrada del Gobierno del Estado
+<option value=5>Con Incorporación de Estudios a la UNAM
+<option value=6>Con Incorporación de Estudios a Universidad Pública
+<option value=7>Con Incorporación de Estudios al IPN
+<option value=8>Con RVOE del Gobierno del Estado
+<option value=9>Con RVOE de la SEP
+<option value=10>Descentralizada del Gobierno del Estado
+<option value=11>Dependiente de la SEP
+<option value=12>Autónoma
+<option value=13>Con RVOE otorgado por Decreto Presidencial
+<option value=14>Unidad Docente Desconcentrada de IES
+<option value=15>Unidad Docente Descentralizada de IES
+<option value=16>
+</select>
+</td>
+</tr><tr><th></th>
+<td colspan=1>
+<select name=rlegal3_inst>
+<option value=0>Todos
+<option value=1>Desconcentrada del Gobierno Federal
+<option value=2>Descentralizada del Gobierno Federal
+<option value=3>Estatal
+<option value=4>Desconcentrada del Gobierno del Estado
+<option value=5>Con Incorporación de Estudios a la UNAM
+<option value=6>Con Incorporación de Estudios a Universidad Pública
+<option value=7>Con Incorporación de Estudios al IPN
+<option value=8>Con RVOE del Gobierno del Estado
+<option value=9>Con RVOE de la SEP
+<option value=10>Descentralizada del Gobierno del Estado
+<option value=11>Dependiente de la SEP
+<option value=12>Autónoma
+<option value=13>Con RVOE otorgado por Decreto Presidencial
+<option value=14>Unidad Docente Desconcentrada de IES
+<option value=15>Unidad Docente Descentralizada de IES
+<option value=16>
+</select>
+</td>
+</tr></table>
+<table>
+<tr> <th align=left>Niveles Académicos:
+ </th><td colspan=1>
+<select name=niv_acad1_inst>
+<option value=0>Todos
+<option value=1>Técnico Superior
+<option value=2>Educación Normal
+<option value=3>Licenciatura
+<option value=4>Especialidad
+<option value=5>Maestría
+<option value=6>Doctorado
+<option value=7>Bachillerato
+<option value=9>Posgrado
+</select>
+</td>
+<td colspan=1>
+<select name=niv_acad2_inst>
+<option value=0>
+<option value=1>Técnico Superior
+<option value=2>Educación Normal
+<option value=3>Licenciatura
+<option value=4>Especialidad
+<option value=5>Maestría
+<option value=6>Doctorado
+<option value=7>Bachillerato
+<option value=9>Posgrado
+</select>
+</td>
+<td colspan=1>
+<select name=niv_acad3_inst>
+<option value=0>
+<option value=1>Técnico Superior
+<option value=2>Educación Normal
+<option value=3>Licenciatura
+<option value=4>Especialidad
+<option value=5>Maestría
+<option value=6>Doctorado
+<option value=7>Bachillerato
+<option value=9>Posgrado
+</select>
+</td>
+<td colspan=1>
+<select name=niv_acad4_inst>
+<option value=0>
+<option value=1>Técnico Superior
+<option value=2>Educación Normal
+<option value=3>Licenciatura
+<option value=4>Especialidad
+<option value=5>Maestría
+<option value=6>Doctorado
+<option value=7>Bachillerato
+<option value=9>Posgrado
+</select>
+</td>
+</tr><tr><td>&nbsp;</td><td colspan=1>
+<select name=niv_acad5_inst>
+<option value=0>
+<option value=1>Técnico Superior
+<option value=2>Educación Normal
+<option value=3>Licenciatura
+<option value=4>Especialidad
+<option value=5>Maestría
+<option value=6>Doctorado
+<option value=7>Bachillerato
+<option value=9>Posgrado
+</select>
+</td>
+<td colspan=1>
+<select name=niv_acad6_inst>
+<option value=0>
+<option value=1>Técnico Superior
+<option value=2>Educación Normal
+<option value=3>Licenciatura
+<option value=4>Especialidad
+<option value=5>Maestría
+<option value=6>Doctorado
+<option value=7>Bachillerato
+<option value=9>Posgrado
+</select>
+</td>
+<td colspan=1>
+<select name=niv_acad7_inst>
+<option value=0>
+<option value=1>Técnico Superior
+<option value=2>Educación Normal
+<option value=3>Licenciatura
+<option value=4>Especialidad
+<option value=5>Maestría
+<option value=6>Doctorado
+<option value=7>Bachillerato
+<option value=9>Posgrado
+</select>
+</td>
+<td colspan=1>
+<select name=niv_acad8_inst>
+<option value=0>
+<option value=1>Técnico Superior
+<option value=2>Educación Normal
+<option value=3>Licenciatura
+<option value=4>Especialidad
+<option value=5>Maestría
+<option value=6>Doctorado
+<option value=7>Bachillerato
+<option value=9>Posgrado
+</select>
+</td>
+</tr><tr><td>&nbsp;</td><tr> <th align=left>Modalidad:
+</th><td colspan=1>
+<select name=moda1>
+<option value=0>Todos
+<option value=1>Abierta
+<option value=2>A distancia
+<option value=3>Escolarizada
+<option value=4>No Escolarizada
+<option value=5>Fines de semana
+<option value=6>Mixta
+<option value=7>Periodos vacacionales
+</select>
+</td>
+<td colspan=1>
+<select name=moda2>
+<option value=0>
+<option value=1>Abierta
+<option value=2>A distancia
+<option value=3>Escolarizada
+<option value=4>No Escolarizada
+<option value=5>Fines de semana
+<option value=6>Mixta
+<option value=7>Periodos vacacionales
+</select>
+</td>
+<td colspan=1>
+<select name=moda3>
+<option value=0>
+<option value=1>Abierta
+<option value=2>A distancia
+<option value=3>Escolarizada
+<option value=4>No Escolarizada
+<option value=5>Fines de semana
+<option value=6>Mixta
+<option value=7>Periodos vacacionales
+</select>
+</td>
+<tr><th><td colspan=1>
+<select name=moda4>
+<option value=0>
+<option value=1>Abierta
+<option value=2>A distancia
+<option value=3>Escolarizada
+<option value=4>No Escolarizada
+<option value=5>Fines de semana
+<option value=6>Mixta
+<option value=7>Periodos vacacionales
+</select>
+</td>
+<td colspan=1>
+<select name=moda5>
+<option value=0>
+<option value=1>Abierta
+<option value=2>A distancia
+<option value=3>Escolarizada
+<option value=4>No Escolarizada
+<option value=5>Fines de semana
+<option value=6>Mixta
+<option value=7>Periodos vacacionales
+</select>
+</td>
+<td colspan=1>
+<select name=moda6>
+<option value=0>
+<option value=1>Abierta
+<option value=2>A distancia
+<option value=3>Escolarizada
+<option value=4>No Escolarizada
+<option value=5>Fines de semana
+<option value=6>Mixta
+<option value=7>Periodos vacacionales
+</select>
+</td>
+</tr></th></tr><tr><td>&nbsp;</td><tr><th>Admision:</th>
+<td colspan=1>
+<select name=Admision1>
+<option value=0>Todos
+<option value=1>Anual
+<option value=2>Cuatrimestral
+<option value=3>Generacional
+<option value=4>Semestral
+<option value=5>Trimestral
+</select>
+</td>
+<td colspan=1>
+<select name=Admision2>
+<option value=0>
+<option value=1>Anual
+<option value=2>Cuatrimestral
+<option value=3>Generacional
+<option value=4>Semestral
+<option value=5>Trimestral
+</select>
+</td>
+<td colspan=1>
+<select name=Admision3>
+<option value=0>
+<option value=1>Anual
+<option value=2>Cuatrimestral
+<option value=3>Generacional
+<option value=4>Semestral
+<option value=5>Trimestral
+</select>
+</td>
+<tr><th><td colspan=1>
+<select name=Admision4>
+<option value=0>
+<option value=1>Anual
+<option value=2>Cuatrimestral
+<option value=3>Generacional
+<option value=4>Semestral
+<option value=5>Trimestral
+</select>
+</td>
+<td colspan=1>
+<select name=Admision5>
+<option value=0>
+<option value=1>Anual
+<option value=2>Cuatrimestral
+<option value=3>Generacional
+<option value=4>Semestral
+<option value=5>Trimestral
+</select>
+</td>
+</tr></th></tr><tr><td>&nbsp;</td></tr></table>
+<SCRIPT LANGUAGE = "JavaScript" > var Array1=  new Array("('Todas','',true,true)",
+"('Aguascalientes')",
+"('Rincón de Romos')",
+"('El Llano')",
+"('Pabellón de Arteaga')",
+"('El Arenal')",
+"('Jesús María')",
+"('José Ma. Morelos (Cañada Honda')");
+var Array2=  new Array("('Todas','',true,true)",
+"('Ensenada')",
+"('Mexicali')",
+"('Tecate')",
+"('Tijuana')",
+"('Valle de Mexicali')",
+"('Nuevo León')",
+"('San Quintín')");
+var Array3=  new Array("('Todas','',true,true)",
+"('San José del Cabo')",
+"('Ciudad Constitución')",
+"('La Paz')",
+"('Loreto')",
+"('Guerrero Negro')",
+"('Los Cabos')",
+"('Cabo San Lucas')");
+var Array4=  new Array("('Todas','',true,true)",
+"('Campeche')",
+"('Calkiní')",
+"('Ciudad del Carmen')",
+"('Ciudad Escárcega')",
+"('Champotón')",
+"('Cajeme')",
+"('Ejido China')",
+"('Lerma')",
+"('San Francisco de Campeche')");
+var Array5=  new Array("('Todas','',true,true)",
+"('Arriaga')",
+"('Comitán')",
+"('Huehuetán')",
+"('San Cristóbal de las Casas')",
+"('Soconusco')",
+"('Tapachula')",
+"('Tonalá')",
+"('Tuxtla Gutiérrez')",
+"('Villaflores')",
+"('Pichucalco')",
+"('Cintalapa')",
+"('Ocosingo')",
+"('Suchiapa')");
+var Array6=  new Array("('Todas','',true,true)",
+"('Chihuahua')",
+"('Ciudad Delicias')",
+"('Ciudad Juárez')",
+"('Hidalgo del Parral')",
+"('Nuevo Casas Grandes')",
+"('Parral')",
+"('Cd. Cuauhtémoc')",
+"('Jiménez')",
+"('Ciudad Delicias')",
+"('Delicias')",
+"('Cd. Camargo')",
+"('Cuauhtémoc')",
+"('Saucillo')");
+var Array7=  new Array("('Todas','',true,true)",
+"('Ciudad Acuña')",
+"('Monclova')",
+"('Múzquiz')",
+"('Nueva Rosita')",
+"('Parras')",
+"('Piedras Negras')",
+"('Sabinas')",
+"('Saltillo')",
+"('San Buenaventura')",
+"('Torreón')",
+"('Villa de Agujita')",
+"('San Pedro de las Colonias')",
+"('Matamoros')",
+"('Ramos Arizpe')",
+"('Aguijita')",
+"('Nava')",
+"('Agujita')",
+"('Cd. Acuña')");
+var Array8=  new Array("('Todas','',true,true)",
+"('Colima')",
+"('Coquimatlán')",
+"('Manzanillo')",
+"('Tecomán')",
+"('Villa de Álvarez')",
+"('Comala')");
+var Array9=  new Array("('Todas','',true,true)",
+"('Ciudad de México')",
+"('Cd. México')");
+var Array10=  new Array("('Todas','',true,true)",
+"('Bermejillo')",
+"('Durango')",
+"('Gómez Palacio')",
+"('Pueblo Nuevo')",
+"('Santiago Papasquiaro')",
+"('Lerdo')",
+"('Guadalupe Victoria')",
+"('Ejido Viilamontemorelos')",
+"('El Salto')");
+var Array11=  new Array("('Todas','',true,true)",
+"('Celaya')",
+"('Guanajuato')",
+"('Irapuato')",
+"('León')",
+"('Moroleón')",
+"('Roque')",
+"('Salamanca')",
+"('Salvatierra')",
+"('San Luis de la Paz')",
+"('San Miguel de Allende')",
+"('Silao')",
+"('Uriangato')",
+"('San Francisco del Rincón')",
+"('Dolores Hidalgo')",
+"('Santa  Ana Pacueco')",
+"('Valle de Santiago')",
+"('Acámbaro')",
+"('Victoria')",
+"('Silao de la Victoria')");
+var Array12=  new Array("('Todas','',true,true)",
+"('Acapulco')",
+"('Ciudad Altamirano')",
+"('Chilpancingo')",
+"('Iguala')",
+"('Ometepec')",
+"('Taxco')",
+"('Tlapa de Comonfort')",
+"('Zihuatanejo')",
+"('Petaquillas')",
+"('Teloloapan')",
+"('Petatlán')");
+var Array13=  new Array("('Todas','',true,true)",
+"('Ciudad Sahagún')",
+"('Huejutla de Reyes')",
+"('Pachuca')",
+"('Tula de Allende')",
+"('Tulancingo')",
+"('Tlahuelilpan')",
+"('Huichapan')",
+"('Ixmiquilpan')",
+"('Apan')",
+"('San Cayetano')",
+"('Huejutla')",
+"('Chapulhuacán')",
+"('Actopan')",
+"('San Agustín Tlaxiaca')",
+"('Zempoala')",
+"('Lagos de Moreno')",
+"('Mineral de la Reforma')",
+"('Huejutla de Reyes')",
+"('Tepeji del Río')",
+"('Zimapán')",
+"('Actopan')",
+"('Atotonilco de Tula')",
+"('Pachuca de Soto')",
+"('Mixquiahuala de Juárez')");
+var Array14=  new Array("('Todas','',true,true)",
+"('Atotonilco el Alto')",
+"('Autlán de Navarro')",
+"('Ciudad Guzmán')",
+"('El Salto')",
+"('Guadalajara')",
+"('Jocotepec')",
+"('La Barca')",
+"('Lagos de Moreno')",
+"('Ocotlán')",
+"('Puerto Vallarta')",
+"('San Juan de Los Lagos')",
+"('Tepatitlán de Morelos')",
+"('Tlajomulco de Zúñiga')",
+"('Tlaquepaque')",
+"('Zapopan')",
+"('Chapala')",
+"('Tepatitlán')",
+"('El Grullo')",
+"('Tequila')",
+"('Tonalá')",
+"('Ameca')",
+"('Zapotlanejo')",
+"('Poncitlán')",
+"('Zacoalco de Torres')",
+"('Cocula')",
+"('Tamazula de Gordiano')",
+"('Santa Cruz de las Flores')",
+"('Arandas')");
+var Array15=  new Array("('Todas','',true,true)",
+"('Acatlán')",
+"('Amecameca')",
+"('Aragón')",
+"('Atizapán de Zaragoza')",
+"('Atlacomulco')",
+"('Chalco')",
+"('Chapingo')",
+"('Coacalco')",
+"('Cuautitlán Izcalli')",
+"('Cuautitlán')",
+"('Ecatepec')",
+"('Huixquilucan')",
+"('Ixtapaluca')",
+"('Ixtlahuaca')",
+"('Iztacala')",
+"('Jilotepec')",
+"('La Paz')",
+"('Metepec')",
+"('Naucalpan')",
+"('Nezahualcóyotl')",
+"('Santiago Tianguistenco')",
+"('Temascaltepec')",
+"('Tenango del Valle')",
+"('Texcoco')",
+"('Tlalnepantla')",
+"('Toluca')",
+"('Valle de Chalco Solidaridad')",
+"('Zumpango')",
+"('Jocotitlán')",
+"('Valle de Bravo')",
+"('Villa de Guerrero')",
+"('Teotihuacán')",
+"('Naucalpan de Juárez')",
+"('Montecillo')",
+"('Zinacantepec')",
+"('Tecamachalco')",
+"('Tecámac')",
+"('Nicolás Romero')",
+"('San Felipe del Progreso')",
+"('Ecatepec')",
+"('Tenancingo')",
+"('Chimalhuacán')",
+"('Tejupilco')",
+"('Tultitlán')",
+"('Lerma')",
+"('San Mateo Atenco')",
+"('Tenancingo')",
+"('San Miguel Ixtapan')",
+"('Tlatlaya')",
+"('Xalatlaco')",
+"('Valle de Chalco')");
+var Array16=  new Array("('Todas','',true,true)",
+"('Apatzingán')",
+"('Lázaro Cárdenas')",
+"('Jiquilpan')",
+"('La Piedad')",
+"('Morelia')",
+"('Tarímbaro')",
+"('Zacapu')",
+"('Zamora')",
+"('Uruapan')",
+"('Zitácuaro')",
+"('Huetamo')",
+"('Los Reyes')",
+"('Acámbaro')",
+"('Hidalgo')",
+"('Cotija')",
+"('Zahuayo')",
+"('Tejupilco')",
+"('Cd. Hidalgo')");
+var Array17=  new Array("('Todas','',true,true)",
+"('Jojutla')",
+"('Xalostoc')",
+"('Zacatepec')",
+"('Cuernavaca')",
+"('Cuautla')",
+"('Yautepec')",
+"('Oaxtepec')",
+"('Yecapixtla')",
+"('Temixco')",
+"('Jiutepec')",
+"('Galeana')");
+var Array18=  new Array("('Todas','',true,true)",
+"('Compostela')",
+"('Tepic')",
+"('Xalisco')",
+"('San Blas')",
+"('La cruz de Huanacaxtle')",
+"('Santiago Ixcuintla')",
+"('Xalisco')",
+"('Ixtlán del Río')",
+"('Ahuacatlán')",
+"('Valle Banderas')",
+"('Acaponeta')");
+var Array19=  new Array("('Todas','',true,true)",
+"('Linares')",
+"('Marín')",
+"('Montemorelos')",
+"('Monterrey')",
+"('San Nicolás de los Garza')",
+"('Ciudad Guadalupe')",
+"('Gral. Escobedo')",
+"('Sta. Catarina')",
+"('Garza García')",
+"('Vallecillo')",
+"('San Pedro Garza García')");
+var Array20=  new Array("('Todas','',true,true)",
+"('Huajuapan de León')",
+"('Juchitán')",
+"('Oaxaca')",
+"('Pinotepa Nacional')",
+"('Puerto Angel')",
+"('Salina Cruz')",
+"('San Pedro Comitancillo')",
+"('Santa Cruz Xoxocotlán')",
+"('Tlaxiaco')",
+"('Tuxtepec')",
+"('San Pedro Pochutla')",
+"('Tehuantepec')",
+"('Sn Juan Bautista Tuxtepec')",
+"('Sn Bartolo Tuxtepec')",
+"('Ixtepec')",
+"('San Pablo Etla')",
+"('Miahuatlán')",
+"('Santo Domingo Tehuantepec')",
+"('Ixtlan de Juarez')",
+"('Santa María Huatulco')",
+"('San Pedro y San Pablo Teposcol')",
+"('San Miguel el Grande')",
+"('Sta. María Tlahuitoltepec Mixe')",
+"('Loma Bonita')");
+var Array21=  new Array("('Todas','',true,true)",
+"('Xicotepec de Juárez')",
+"('Huauchinango')",
+"('Puebla')",
+"('San Andrés Cholula')",
+"('San Martín Texmelucan')",
+"('San Pedro Cholula')",
+"('Santiago Zautla')",
+"('Tecamachalco')",
+"('Tecomatlán')",
+"('Tehuacán')",
+"('Tepeaca')",
+"('Teziutlán')",
+"('Zacapoaxtla')",
+"('Zacatlán')",
+"('Atlixco')",
+"('Izúcar de Matamoros')",
+"('Tepexi de Rodríguez')",
+"('Acatlán')",
+"('Ciudad Serdán')",
+"('Cholula')",
+"('Tonantzintla')",
+"('Pahuatlán')",
+"('Tlatlauquitepec')",
+"('Chignahuapan')",
+"('Libres')",
+"('Acatzingo de Hidalgo')",
+"('Tetela de Ocampo')",
+"('Tetela')",
+"('Cuetzalan')",
+"('Chiautla')",
+"('Huehuetla')",
+"('Huejotzingo')");
+var Array22=  new Array("('Todas','',true,true)",
+"('Querétaro')",
+"('San Juan del Río')",
+"('Juriquilla')",
+"('Jalpan')",
+"('Amealco')",
+"('Cadereyta de Montes')",
+"('Santiago de Querétaro')",
+"('Jalpan de Serra')",
+"('Pedro Escobedo')");
+var Array23=  new Array("('Todas','',true,true)",
+"('Cancún')",
+"('Chetumal')",
+"('Cozumel')",
+"('Felipe Carrillo Puerto')",
+"('Othón P. Blanco')",
+"('Carrillo Puerto')",
+"('Playa del Cármen')");
+var Array24=  new Array("('Todas','',true,true)",
+"('Matehuala')",
+"('Ríoverde')",
+"('San Luis Potosí')",
+"('Soledad Diez Gutiérrez')",
+"('Tamanzunchale')",
+"('Ciudad Valles')",
+"('Tamuín')",
+"('Tonkanhuitz')",
+"('Soledad de Graciano Sánchez')",
+"('Salinas de Hidalgo')");
+var Array25=  new Array("('Todas','',true,true)",
+"('Culiacán')",
+"('El Rosario')",
+"('El Fuerte')",
+"('Guamúchil')",
+"('Guasave')",
+"('Juan José Ríos')",
+"('Los Mochis')",
+"('Mazatlán')",
+"('Mochicahui')");
+var Array26=  new Array("('Todas','',true,true)",
+"('Agua Prieta')",
+"('Caborca')",
+"('Cajeme')",
+"('Cananea')",
+"('Guaymas')",
+"('Hermosillo')",
+"('Huatabampo')",
+"('Magdalena')",
+"('Navojoa')",
+"('Nogales')",
+"('Puerto Peñasco')",
+"('San Luis Río Colorado')",
+"('Santa Ana')",
+"('Ciudad Obregón')",
+"('Bácum')",
+"('Valle del Yaqui')",
+"('Benito Juárez')",
+"('Etchojoa')",
+"('Moctezuma')",
+"('Empalme')");
+var Array27=  new Array("('Todas','',true,true)",
+"('Balancán')",
+"('Comalcalco')",
+"('Cunduacán')",
+"('Cárdenas')",
+"('Teapa')",
+"('Tenosique')",
+"('Villa de Ocuiltzapotlán')",
+"('Villahermosa')",
+"('Chontalpa')",
+"('Centla')",
+"('Villa La Venta Huimanguillo')",
+"('Centro')",
+"('Macuspana')",
+"('Emiliano Zapata')",
+"('H. Cárdenas')");
+var Array28=  new Array("('Todas','',true,true)",
+"('Altamira')",
+"('Ciudad Madero')",
+"('Matamoros')",
+"('Nuevo Laredo')",
+"('Reynosa')",
+"('Río Bravo')",
+"('San Fernando')",
+"('Tampico')",
+"('Ciudad Mante')",
+"('Ciudad Victoria')",
+"('Ciudad Miguel Alemán')",
+"('Unidad los Pinos')",
+"('Valle Hermoso')");
+var Array29=  new Array("('Todas','',true,true)",
+"('Acuitlapilco')",
+"('Apizaco')",
+"('Calpulalpan')",
+"('Huamantla')",
+"('Ixtacuixtla')",
+"('Tlaxcala')",
+"('Xocoyucan')",
+"('Totolac')",
+"('Tlaxco')",
+"('Ixtacuixtla')",
+"('Tepetitla de Lardizabal')",
+"('Apetatitlán de Antonio Carvaja')",
+"('Santa Apolonia Teacalco')");
+var Array30=  new Array("('Todas','',true,true)",
+"('Acayucan')",
+"('Alvarado')",
+"('Amatlán de Los Reyes')",
+"('Antón Lizardo')",
+"('Boca del Río')",
+"('Cerro Azul')",
+"('Coatzacoalcos')",
+"('Cosamaloapan')",
+"('Córdoba')",
+"('Martínez de la Torre')",
+"('Minatitlán')",
+"('Misantla')",
+"('Orizaba')",
+"('Poza Rica')",
+"('Pánuco')",
+"('Río Blanco')",
+"('San Andrés Tuxtla')",
+"('Tantoyuca')",
+"('Tierra Blanca')",
+"('Tuxpan')",
+"('Veracruz')",
+"('Xalapa')",
+"('Camerino Z. Mendoza')",
+"('Ursulo Galván')",
+"('Nogales')",
+"('Amatlán de los Reyes Peñuela')",
+"('Huatusco')",
+"('Perote')",
+"('Zongolica')",
+"('Papantla')",
+"('Cd. Mendoza')",
+"('Tlacotalpan')",
+"('Álamo Temapache')",
+"('Choapas')",
+"('Nanchital')",
+"('Cuitlahuac')",
+"('Río Blanco')",
+"('Medellin de Bravo')",
+"('Ixtaczoquitlán')");
+var Array31=  new Array("('Todas','',true,true)",
+"('Conkal')",
+"('Mérida')",
+"('Tizimín')",
+"('Valladolid')",
+"('Oxkutzcab')",
+"('Uman')",
+"('Motul de Carrillo Puerto')",
+"('Cholul')",
+"('Progreso')");
+var Array32=  new Array("('Todas','',true,true)",
+"('Fresnillo')",
+"('Río Grande')",
+"('Tlaltenango')",
+"('Zacatecas')",
+"('Loreto')",
+"('Guadalupe')",
+"('Nochistlán')",
+"('El Orito')",
+"('Jerez de García Salinas')",
+"('Sombrerete')",
+"('Cieneguillas')",
+"('Víctor  Rosales')");
+
+function SelLocalidad(inForm,selected,inForm2) {
+  if( ( selected != 9 ) && ( selected != 0 ) ){
+    inForm.disabled = false;
+    inForm2.disabled = true;
+    var selectedArray = eval("Array"+selected);
+    while (selectedArray.length < inForm.options.length) {
+       inForm.options[(inForm.options.length - 1)] = null;
+    }
+    for (var i=0; i < selectedArray.length; i++) {
+       eval("inForm.options[i]=" + "new Option" + selectedArray[i]);
+	     inForm.options[i].value == i;
+    }
+    if (inForm.options[0].value == '') {
+       if ( navigator.appName == 'Netscape') {
+          if (parseInt(navigator.appVersion) < 4) {
+             window.history.go(0);
+          }else {
+             if (navigator.platform == 'Win32' || navigator.platform == 'Win16') {
+                window.history.go(0);
+             }
+          }
+       }
+    }
+  }
+  else{
+     inForm.disabled=true;
+     inForm2.disabled = false;
+  }
+}
+// End --->
+</script>
+
+<table>
+<tr>
+
+
+</tr>
+<tr>
+<td colspan=2 align=center>
+<b>INCLUIR FUNCIONARIOS
+<input type=checkbox name=func value="S">
+</td>
+</tr>
+<tr>
+<td>
+<input type=submit value="Consultar">
+<b>SOLO EL NOMBRE
+<input type=radio name=todo value="N" checked>
+<b>TODOS LOS DATOS
+<input type=radio name=todo value="S">
+</td>
+<td>
+ <input type=reset  value="Restablecer">
+</td>
+</tr>
+</table>
+
+
+</center>
+</form>
+
+<!--parte inferior tabla -->
+<!--<p align=left>&nbsp;</p></td>
+            <td background=/principal/imagenes/central/cuadros/img_derecha_centro.gif>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><img src=/principal/imagenes/central/cuadros/img_izquierda_abajo.gif width=10 height=15></td>
+            <td background=/principal/imagenes/central/cuadros/img_centro_abajo.gif>
+
+
+
+
+</td>
+
+
+
+            <td><div align=right><img src=/principal/imagenes/central/cuadros/img_derecha_abajo.gif width=10 height=15></div
+></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+-->
+
+
+</body>
+</html>
